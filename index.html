@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AngularJS : Login to Kii</title>
+</head>
+<body>
+
+<div id="myApp" ng-app="MyApp">
+	{{"Hello"+" "+"World!"}}
+	<div ng-controller="KiiController">
+		<input type="text" ng-model="username"></input>
+		<input type="text" ng-model="password"></input>
+		<!-- <button ng-click="login();">Login KiiSDK</button> -->
+		<button ng-click="loginJQueryREST();">Login KiiREST JQuery</button>
+		<button ng-click="loginAngularREST();">Login KiiREST Angular</button>
+		<div>{{message}}</div>
+	</div>
+	<div ng-controller="Controller_1">
+		My Controller 1
+	</div>
+	<div ng-controller="Controller_2">
+		My Controller 2
+	</div>
+</div>
+
+<script type="text/javascript" src="js/lib/jquery-2.1.1.js"></script>
+
+<script type="text/javascript" src="js/lib/angular.js"></script>
+<script type="text/javascript" src="js/lib/angular-resource.js"></script>
+
+<script type="text/javascript" src="js/lib/kii/KiiSDK.js"></script>
+
+<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
